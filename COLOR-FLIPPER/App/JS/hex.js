@@ -10,6 +10,7 @@ function colors (){
     color.style.color = hexValue;
     color.textContent = hexValue;
 }
+//setInterval will change the color every 2 seconds. 
 setInterval(colors,2000)
 
 function getRandomColor(){
