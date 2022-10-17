@@ -8,6 +8,7 @@
 
 :root {
   --bg-color:#DDE1E7;
+  --bg-color1:#ffffff;
   --ftn-color1:#1285b7;
   --ftn-color2:#2f4151;
   --transition:all 0.5s;
@@ -42,7 +43,7 @@ body header .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 25em;
 }
 body header .navBar h2 {
   font-weight: 500;
@@ -65,9 +66,10 @@ body header .navBar .colorChoice a:hover, body header .navBar .colorChoice a:act
 body main {
   width: 100%;
   text-align: center;
+  padding-inline: 1em;
 }
 body main .box {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color1);
   width: 100%;
   max-width: 36em;
   margin-inline: auto;
@@ -92,5 +94,6 @@ body main .btn {
   padding: 0.8em 1em;
   margin-block: 1em;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 900;
+  transition: var(--transition);
 }/*# sourceMappingURL=style.css.map */
