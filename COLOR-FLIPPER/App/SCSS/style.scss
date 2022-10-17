@@ -1,0 +1,115 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:inherit;
+    text-decoration:none;
+    font-family:sans-serif;
+    // border:1px solid red;
+}
+:root{
+    --bg-color:#DDE1E7;
+    --ftn-color1:#1285b7;
+    --ftn-color2:#2f4151;
+    --transition:all 0.5s;
+}
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+  min-height:100vh;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+
+  background-color:var(--bg-color);
+  transition:var(--transition);
+
+  header{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        background-color:var(--bg-color);
+        box-shadow:0 5px 10px 0 rgba(0,0,0,0.4);
+
+        height:4em;
+        font-size:1.4rem;
+        color:var(--ftn-color1);
+        .navBar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width:60%;
+
+            h2{
+                font-weight:500;
+                font-size:2rem;
+            }
+
+            .colorChoice{
+                list-style:none;
+                display:flex;
+                align-items:center;
+                gap:1.5em;
+
+                a{
+                    color:var(--ftn-color2);
+                    font-weight:600;
+                    transition:var(--transition);
+                    
+
+                    &:hover,&:active{
+                        color:var(--ftn-color1);
+                    }
+                }
+            }
+        }
+    }
+    main{
+        width:100%;
+        text-align:center;
+        
+        .box{
+            background-color:var(--bg-color);
+            width:100%;
+            max-width:36em;
+            margin-inline:auto;
+            padding:1.3em 1em;
+            border-radius:3px;
+
+            box-shadow:0 5px 10px 0 rgba(0,0,0,0.4);
+
+            color:var(--ftn-color1);
+
+            h2{
+                font-size:2rem;
+
+                span{
+                    font-size:1.4rem;
+                    text-transform:uppercase;
+                    display:block;
+                    margin-top:0.4em;
+                }
+            }
+            
+        }
+        .btn{
+            
+            border:2px solid var(--ftn-color2);
+            outline:none;
+            border-radius:3px;
+           
+            padding:0.8em 1em;
+            margin-block:1em;
+            
+            cursor:pointer;
+            font-weight:600;
+            
+
+        }
+    }
+}   

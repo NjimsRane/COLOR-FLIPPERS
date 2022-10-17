@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1F5F8;
+}
+body header {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 100%;
+}
+body header .navBar {
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+body header .navBar h4 {
+  color: teal;
+  font-weight: 500;
+  cursor: pointer;
+}
+body header .navBar .colorChoice {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+body header .navBar .colorChoice li a {
+  color: rgb(11, 17, 31);
+  transition: all 0.5s;
+}
+body header .navBar .colorChoice li a:hover {
+  color: teal;
+}
+body main {
+  width: 100%;
+  text-align: center;
+}
+body main .box {
+  margin-inline: auto;
+  background-color: rgb(3, 7, 14);
+  width: 100%;
+  max-width: 40em;
+  border-radius: 20px;
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+body main .box h2 {
+  color: #F1F5F8;
+}
+body main .box span {
+  color: rgb(51, 119, 153);
+}
+body main .btn {
+  padding: 0.5em 1em;
+  border: none;
+  border: 1px solid #222;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
